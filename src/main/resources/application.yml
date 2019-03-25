@@ -1,0 +1,10 @@
+spring:
+#  datasource:
+#    data: classpath:data.sql   # 시작 시점 실행되는 script
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  h2:
+    console:
+      enabled: true
