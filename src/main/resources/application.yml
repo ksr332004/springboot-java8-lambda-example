@@ -1,6 +1,8 @@
 spring:
-#  datasource:
-#    data: classpath:data.sql   # 시작 시점 실행되는 script
+  datasource:
+    url: jdbc:h2:~/test
+    data-username: sa
+    data-password: 
   jpa:
     show-sql: true
     hibernate:
