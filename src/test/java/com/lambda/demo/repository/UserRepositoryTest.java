@@ -1,7 +1,6 @@
 package com.lambda.demo.repository;
 
 import com.lambda.demo.domain.User;
-import lombok.extern.slf4j.Slf4j;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +12,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
-@Slf4j
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -25,9 +23,7 @@ public class UserRepositoryTest {
 
     @Before
     public void serUp() {
-        user = new User();
-        user.setName("TEST");
-        user.setEmail("test@test.com");
+        user = new User("TEST1", "TEST1@test.com");
     }
 
     @Test
