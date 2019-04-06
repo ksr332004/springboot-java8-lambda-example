@@ -15,7 +15,6 @@ public class ClassicJavaUserServiceImpl implements ClassicJavaUserService {
 
     private final UserRepository userRepository;
 
-    @Autowired
     public ClassicJavaUserServiceImpl(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
