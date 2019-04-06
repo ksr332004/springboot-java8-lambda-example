@@ -17,12 +17,12 @@ import java.util.List;
 @ActiveProfiles("test")
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ClassicJavaUserServiceTest {
+public class ModernJavaUserServiceTest {
 
     @Autowired
     UserRepository userRepository;
     @Autowired
-    ClassicJavaUserService classicJavaUserService;
+    ModernJavaUserService modernJavaUserService;
 
     @Before
     public void setUp() {
@@ -34,8 +34,8 @@ public class ClassicJavaUserServiceTest {
     }
 
     @Test
-    public void classicJavaUserTest() {
-        List<String> emails = classicJavaUserService.findUserEmailByName("TEST1");
+    public void modernJavaUserTest() {
+        List<String> emails = modernJavaUserService.findUserEmailByName("TEST1");
         Assert.assertEquals(emails, Arrays.asList("test1@test1.com", "test1@test2.com"));
     }
 
